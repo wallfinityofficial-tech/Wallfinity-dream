@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About – Wallfinity</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>About Wallfinity</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trending.html">Trending</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section style="padding: 40px; text-align: center;">
+    <h2>Welcome to Wallfinity 🌸</h2>
+    <p>Wallfinity is your one-stop destination for aesthetic wallpapers from top sources like Unsplash, Pexels, and Wallhaven.</p>
+    <p>Search your favorite theme, like or rate wallpapers, and explore trending collections — all in one creamy, elegant space.</p>
+  </section>
+</body>
+</html>
