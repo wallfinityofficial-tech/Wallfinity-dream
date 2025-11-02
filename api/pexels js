@@ -1,0 +1,19 @@
+export async function getPexelsImages(query) {
+  const KEY = process.env.PEXELS_API_KEY;
+  if (!KEY) return [];
+
+  const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=12`, {
+    headers: { Authorization: KEY }
+  });
+
+  const data = await res.json();
+  if (!data.photos) return [];
+
+  return data.photos.map(p => ({
+    thumb: p.src.large,
+    src: p.src.original,
+    author: p.photographer,
+    url: p.url,
+    source: "Pexels"
+  }));
+}
